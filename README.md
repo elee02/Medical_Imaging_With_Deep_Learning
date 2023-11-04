@@ -2,5 +2,5 @@
 This repo is created for simultaneously educational and professional purposes. Use it only to gain immediate feedback!
 
 ## To initialize the submodules:
-```git submodule init```\n
-```git submodule update```
+```git submodule init```
+```\ngit submodule update```
