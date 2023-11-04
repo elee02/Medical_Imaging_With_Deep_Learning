@@ -3,4 +3,5 @@ This repo is created for simultaneously educational and professional purposes. U
 
 ## To initialize the submodules:
 ```git submodule init```
-```\ngit submodule update```
+
+```git submodule update```
