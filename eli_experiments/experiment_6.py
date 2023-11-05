@@ -16,7 +16,7 @@ print(f'The multiplication:\n{c}')
 # shapes, broatcasting is applied
 print()
 d = t.ones(3,4) * 5
-e = t.ones(2, 4, 5) * 2
+e = t.ones(2,1, 4, 5) * 2
 print(f"Third tensor:\n{d}\n\n{d.shape}")
 print()
 print(f"Fourth tensor:\n{e}\n\n{e.shape}")
