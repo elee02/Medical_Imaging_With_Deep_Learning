@@ -1,4 +1,4 @@
-''' Getting Shape of Tensor (same as in numpy)'''
+''' Getting Shape of Tensor '''
 import torch
 
 x = torch.Tensor(3,4,2)
@@ -10,4 +10,6 @@ size = x.size()
 print("Size:", size)
 
 dim1, dim2, dim3 = x.size()
-print("Size:", dim1, dim2, dim3)
+print("dim1, dim2, dim3:", dim1, dim2, dim3)
+
+print(x.size(0)) # size of the dimension at the index 0
