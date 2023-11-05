@@ -1,4 +1,5 @@
-""" Tensors """
+''' Tensors '''
+
 import torch
 import numpy as np
 print(torch.Tensor(3,4,2)) # Creates Tensor with given shape
