@@ -1,4 +1,4 @@
-'''Multiplication of matrices with .matmul() method'''
+'''Multiplication of matrices with broadcasting (.matmul() method)'''
 import torch as t
 
 # multiplying 2D arrays
@@ -15,8 +15,8 @@ print(f'The multiplication:\n{c}')
 # in the case of multiplication of different
 # shapes, broatcasting is applied
 print()
-d = t.ones(3,4) * 5
-e = t.ones(2,1, 4, 5) * 2
+d = t.ones(3, 11, 7) * 5
+e = t.ones(4, 1, 7, 2) * 2
 print(f"Third tensor:\n{d}\n\n{d.shape}")
 print()
 print(f"Fourth tensor:\n{e}\n\n{e.shape}")
