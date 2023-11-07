@@ -9,20 +9,24 @@ print()
 print(f'Second tensor:\n{b}')
 
 print()
-c = a * b
-print(f'The multiplication:\n{c}')
+c = a * b # element-wise or Hadamard product
+print(f'The element-wise product:\n{c}')
+
+print() 
+d = t.mm(a, b) # matrix multiplication
+print(f"The 2D matrix multiplication:\n{d}")
 
 # in the case of multiplication of different
 # shapes, broatcasting is applied
 print()
-d = t.ones(3, 11, 7) * 5
-e = t.ones(4, 1, 7, 2) * 2
-print(f"Third tensor:\n{d}\n\n{d.shape}")
+e = t.ones(3, 11, 7) * 5
+f = t.ones(4, 1, 7, 2) * 2
+print(f"Third tensor:\n{e}\n\n{e.shape}")
 print()
-print(f"Fourth tensor:\n{e}\n\n{e.shape}")
+print(f"Fourth tensor:\n{f}\n\n{f.shape}")
 
-f = d @ e
+g = e @ f
 print()
-print(f"Broatcased multiplication:\n{f}\n")
-print(f"The shape of result: {f.shape}")
+print(f"Broatcased multiplication:\n{g}\n")
+print(f"The shape of result: {g.shape}")
 print()
