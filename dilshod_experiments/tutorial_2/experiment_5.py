@@ -32,5 +32,5 @@ print('y2 ', y2)
 y1_b, y2_b = torch.broadcast_tensors(y1, y2)
 print('y1_b ', y1_b)
 print('y2_b ', y2_b)
-print('multiplication:\n', torch.matmul(y1_b, y2_b))
+print('multiplication:\n', torch.matmul(y1_b, y2_b)) # 'y1_b @ y2_b' can be used 
 
