@@ -7,7 +7,9 @@ Modules can contain other modules,
 and a neural network is considered to be a module itself as well. 
 The basic template of a module is as follows:
 """
-class MyModule(nn.Module):
+
+# The nn.Module class is a base class provided by PyTorch
+class MyModule(nn.Module): # inheritance
 
     def __init__(self):
         super().__init__()
