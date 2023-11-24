@@ -12,7 +12,8 @@ The basic template of a module is as follows:
 class MyModule(nn.Module): # inheritance
 
     def __init__(self):
-        super().__init__()
+        super().__init__() 
+        # In the init function, we usually create the parameters of the module, using nn.Parameter
         # Some init for my module
 
     def forward(self, x):
